@@ -22,7 +22,7 @@ namespace TradingAPI.DataAccessLayer.DataTransferObject.Stock
         [Range(0.01,100)]
         public decimal LastDiv { get; set; }
         [Required]
-        [MaxLength(10, ErrorMessage = "Industry cannot be over 10 characters")]
+        [MaxLength(100, ErrorMessage = "Industry cannot be over 10 characters")]
         public string Industry { get; set; } = string.Empty;
     }
 }
